@@ -1,0 +1,59 @@
+.contenedor {
+    margin-top: 5rem;
+    position: relative;
+    /* background-color: rgba(255, 0, 0, 0.747); */
+    /* border: 4px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonOnOff {
+    width: 8%;
+}
+.buttonOnOff:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.container {
+    position: relative;
+    width: 15rem;
+    height: 1.5rem;
+    overflow: hidden;
+    /* border: 1px solid #cccccc98; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(167, 167, 167, 0.432);
+  }
+
+  .text {
+    position: absolute;
+    white-space: nowrap;
+    animation: moveText 4s linear infinite;
+    color: rgb(185, 19, 19);
+    font-size: 1rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.575)
+  }
+
+  @keyframes moveText {
+    0% {
+      transform: translateX(180%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+    /* 100% {
+      transform: translateX(100%);
+    } */
+  }
+
+  .buttonOnOff.clicked {
+    transform: translateY(2px);
+    color: red;
+}

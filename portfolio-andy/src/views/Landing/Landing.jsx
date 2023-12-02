@@ -1,12 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Landing.module.css'
 import imageFondo from '../../assets/fondo.png'
 import imageTitulo from '../../assets/tituloAndyO22.png'
 import buttonHome from '../../assets/ButtonHome.png'
 
+import OnOff from '../../components/OnOff/OnOff'
+
 import {useNavigate} from 'react-router-dom';
 
 function Landing() {
+
+    
 
     const navigate = useNavigate();
     const [isClicked, setIsClicked] = useState(false);
@@ -48,6 +52,7 @@ function Landing() {
                 />
                 {/* {isClicked===true ? <p>true!!!</p> : <p>false!!</p>} */}
             </div>
+        <OnOff />
         </div>    
     
 
