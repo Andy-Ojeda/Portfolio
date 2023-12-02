@@ -1,39 +1,33 @@
 import { useState } from 'react';
+import {Routes, Route} from 'react-router-dom';
 
 import './App.css'
-import imageFondo from './assets/fondo.png';
-import imageEdificio from './assets/edificio22.png';
-import imagePersonaje from './assets/personaje.png';
-import imageTitulo from './assets/tituloAndyO22.png';
-import personajeEdificio from './assets/personajeEdificio.png';
+
+
+import Landing from './views/Landing/Landing';
+import Home from './views/Home/Home';
+import Skills from './views/Skills/Skills';
+import Projects from './views/Projects/Projects';
+import About from './views/About/About';
 
 function App() {
   
   return (
     <>
-      <div className="contAll">
-        <img src={imageFondo} alt="" />
-      </div>
-      
-      <div className='contImages'>
-          <div className='contTitulo'>
-            <img src={imageTitulo} alt="" />
-          </div>
-          <div className='contEdifPerso'>
-              <img src={personajeEdificio} alt='edificio' />
-
-              {/* <div className='contPersonaje'>
-                <img src={imagePersonaje} alt="" />
-              </div>
-              
-              <div className='contEdificio'>
-                <img src={imageEdificio} alt="" />
-              </div> */}
-          </div>
-
-      </div>
+    <Routes>
+      <Route path='/' element={<Landing/>} />
+      <Route path='/home' element={<Home/>} />
+      <Route path='/about' element={<About/>} />
+      <Route path='/skills' element={<Skills/>} />
+      <Route path='/projects' element={<Projects/>} />
 
 
+
+
+
+
+
+    </Routes>
     </>
   )
 }
