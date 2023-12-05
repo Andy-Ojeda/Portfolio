@@ -3,7 +3,7 @@ import style from './Landing.module.css'
 import imageFondo from '../../assets/fondo.png'
 import imageTitulo from '../../assets/tituloAndyO22.png'
 import buttonHome from '../../assets/ButtonHome.png'
-
+import Nav from '../../components/Nav/Nav'
 import OnOff from '../../components/OnOff/OnOff'
 
 import {useNavigate} from 'react-router-dom';
@@ -31,17 +31,13 @@ function Landing() {
   return (
     <>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
-        <div className={style.contAll}>
-            <img src={imageFondo} alt="" />
-        </div>
-
-    
-
+        
         <div className={style.contImages}>
-            <div className={style.contTitulo}>
+            <Nav />
+            {/* <div className={style.contTitulo}>
                 <img src={imageTitulo} alt="" />
                 <h3 className={style.subtitulo}>Full Stack Developer;</h3>
-            </div>
+            </div> */}
             <div className={style.buttonHome}>
                 {/* <button onClick={()=> navigate('/home')}>HOME</button> */}
                 <img className={`${style.button} ${isClicked ? style.clicked : ''}`} 
@@ -52,7 +48,7 @@ function Landing() {
                 />
                 {/* {isClicked===true ? <p>true!!!</p> : <p>false!!</p>} */}
             </div>
-        <OnOff />
+        {/* <OnOff /> */}
         </div>    
     
 

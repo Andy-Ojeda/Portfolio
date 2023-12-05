@@ -1,12 +1,57 @@
 body {
   margin: 0;
   overflow: hidden;
+  width: 100vw;
+  /* background-color: rgba(255, 255, 0, 0.788); */
 }
 
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
+  
   text-align: center;
 }
 
+
+.contentALLok {
+  /* background-color: rgba(128, 111, 0, 0.705); */
+  /* display: flex; */
+  width: 100vw;
+  height: 36.5rem;
+  /* border: 3px solid yellow; */
+
+  /* margin-top: -10rem; */
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.contAll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  
+}
+.contAll img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+.contOnOff {
+  position: fixed;
+  margin-top: 34rem;
+  z-index: 9999;
+}

@@ -1,0 +1,23 @@
+.contX {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -3rem;
+    margin-top: -5rem;
+    /* background-color: yellow;     */
+}
+.contX img {
+    width: 3%;
+    animation: parpadeo 1s infinite;
+    cursor: pointer;
+}
+.contX img:hover {
+    transform: translateY(-2px);
+}
+
+@keyframes parpadeo {
+    0% { opacity: 0.95; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0.95; }
+  }

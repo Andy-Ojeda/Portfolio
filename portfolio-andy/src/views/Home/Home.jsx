@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom';
 import imageTitulo from '../../assets/tituloAndyO22.png';
 import personajeEdificio from '../../assets/personajeEdificio.png';
 import flechaRoja from '../../assets/flechaRoja.png';
-
+import Nav from '../../components/Nav/Nav'
 
 function Home() {
 
@@ -44,44 +44,44 @@ function Home() {
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" />
 
-        <div className={style.contAll}>
-            <img src={imageFondo} alt="" />
-        </div>
-  
         <div className={style.contImages}>
-            <div className={style.contTitulo}>
+            <Nav />
+            {/* <div className={style.contTitulo}>
                 <img src={imageTitulo} alt="" />
             </div>
-            <h3 className={style.subtitulo}>Full Stack Developer;</h3>
+            <h3 className={style.subtitulo}>Full Stack Developer;</h3> */}
             <div className={style.contEdifPerso}>
                 <div className={style.contMenu}>
                     <div className={style.contOptions} 
-                        onMouseOver={()=>handleOver('skills')} 
-                        onMouseOut={()=>handleOverOFF('skills')}
-                        onClick={() => navigate("/skills")}
                     >
                         {skills === true && <img src={flechaRoja}/>}
-                        <h2 className={style.h2}>
+                        <h2 className={style.h2}
+                            onMouseOver={()=>handleOver('skills')} 
+                            onMouseOut={()=>handleOverOFF('skills')}
+                            onClick={() => navigate("/skills")}
+                        >    
                             Skills
                         </h2>
                     </div>
                     <div className={style.contOptions} 
-                        onMouseOver={()=>handleOver('projects')} 
-                        onMouseOut={()=>handleOverOFF('projects')}
-                        onClick={() => navigate("/projects")}
                     >
                         {projects === true && <img src={flechaRoja}/>}
-                        <h2 className={style.h2}>
+                        <h2 className={style.h2}
+                            onMouseOver={()=>handleOver('projects')} 
+                            onMouseOut={()=>handleOverOFF('projects')}
+                            onClick={() => navigate("/projects")}
+                        >
                             Projects
                         </h2>
                     </div>
                     <div className={style.contOptions} 
-                        onMouseOver={()=>handleOver('about')} 
-                        onMouseOut={()=>handleOverOFF('about')}
-                        onClick={() => navigate("/about")}
                     >
                         {about === true && <img src={flechaRoja}/>}
-                        <h2 className={style.h2}>
+                        <h2 className={style.h2}
+                            onMouseOver={()=>handleOver('about')} 
+                            onMouseOut={()=>handleOverOFF('about')}
+                            onClick={() => navigate("/about")}
+                        >
                             About me
                         </h2>
                     </div>

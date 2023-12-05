@@ -12,47 +12,70 @@ export default function OnOff() {
     const [isClicked, setIsClicked] = useState(false);
 
     const handleClickON = ()=> {
-        audio.play();
-        // if (upDown==="down") setIsClicked(true);
-        
-        // if (upDown==="up") setIsClicked(false);
-        
+        // audio.play();
+        setIsPlaying(true);
+       
     }
 
     const handleClickOFF = ()=> {
-        audio.pause();
-        // if (upDown==="down") setIsClicked(true);
-        
-        // if (upDown==="up") setIsClicked(false);
-        
+        // audio.pause();
+        setIsPlaying(false);
+       
     }
             
 
     
     useEffect(()=>{
-        audio.play();
-        setIsPlaying(true);
-        // return ()=>{
-        //     audio.pause();
-        // };
-    },[audio]);
+        if (isPlaying) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    },[isPlaying]);
     
   return (
     <div className={style.contenedor}>
 
-        <div>
-            <img className={`${style.buttonOnOff} ${isClicked ? style.clicked : ''}`} 
-                onClick={handleClickON}
-                src={imageON} alt="" 
-                />
-            <img className={`${style.buttonOnOff} ${isClicked ? style.clicked : ''}`} 
-                onClick={handleClickOFF}
-                src={imageOFF} alt="" 
-            /> 
+        <div className={style.contImgOnOff}>
+            {/* <div className={style.division}></div> */}
+            <div className={style.division}>
+                {/* <img className={`${style.buttonOnOff} ${isClicked ? style.clicked : ''}`}  */}
+                <div className={style.pepito}>
+                    <img className={style.buttonOnOff} 
+                        onClick={handleClickON}
+                        src={imageON} 
+                        alt="" 
+                        />
+                    <img className={`${style.buttonOnOff} ${isClicked ? style.clicked : ''}`} 
+                        onClick={handleClickOFF}
+                        src={imageOFF} 
+                        alt="" 
+                    />
+                </div>
+            </div> 
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
         </div>
        
-        <div className={style.container}>
-            <h5 className={style.text}>Playing - audio Goal3 8 bits -</h5>
+        <div className={style.contText}>
+            {/* <div className={style.division}></div> */}
+            <div className={style.division}>
+                <div className={style.container}>
+                    {isPlaying? <h5 className={style.text}>Playing - audio Goal3 8 bits -</h5>
+                    : <h5 className={style.textPaused}>Paused Audio</h5>
+                    }
+                </div>
+            </div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
+            <div className={style.division}></div>
         </div>
         {/* {isPlaying ? 
             : 
