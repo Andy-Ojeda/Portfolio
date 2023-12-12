@@ -5,12 +5,7 @@ import X from '../../components/Cerrar/Cerrar';
 
 import imagePerfil from '../../assets/imagePerfil.png';
 import connectify from '../../assets/8bits-connectify.png';
-import css8bit from '../../assets/8bits-css.png';
-import html8bit from '../../assets/8bits-html.png';
-import js8bit from '../../assets/8bits-js.png';
-import react8bit from '../../assets/8bits-react.png';
-import arriba from '../../assets/botonFlecha.png';
-import abajo from '../../assets/botonFlecha.png';
+
 import flag from '../../assets/8bits-flag.png';
 import rick from '../../assets/8bits-rick.png';
 
@@ -73,13 +68,9 @@ function Projects() {
           </div>
 
           <div className={style.contFlechas}>            
-                <div className={style.contImgFlecha} onClick={() => handleScroll('up')}>
-                    {/* <img src={arriba} alt="" onClick={() => handleScroll('up')} /> */}
-                </div>
+                <div className={style.contImgFlecha} onClick={() => handleScroll('up')}></div>
               
-                <div className={style.contImgFlecha2} onClick={() => handleScroll('down')}>
-                    {/* <img src={abajo} alt="" onClick={() => handleScroll('down')} /> */}
-                </div>
+                <div className={style.contImgFlecha2} onClick={() => handleScroll('down')}></div>
           </div>
 
 

@@ -29,7 +29,8 @@ function Skills() {
             <div className={style.contImage}>
                 <img src={imagePerfil} alt="" />
             </div>
-            {/* <div className={style.cont8bits}> */}
+            <div className={style.cont8bits}>
+                <label className={style.titulo}>- SKILLS -</label>
                 <div className={style.contDetails}>
                     <div className={style.cuadro}>
                         <img src={css8bit} alt="CSS" />
@@ -68,7 +69,7 @@ function Skills() {
                         <label>Mongo</label>  
                     </div>
                 </div>
-            {/* </div> */}
+            </div>
       
       
       </div>

@@ -34,7 +34,7 @@
 .contDetails {
     /* position: relative; */
     /* background-color: rgba(255, 0, 0, 0.747); */
-    width: 70%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr ;
@@ -62,4 +62,16 @@
     text-stroke: 0.5px #c5bdbd;  */
 }
 
-
+.cont8bits {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    /* background-color: green; */
+}
+.titulo {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(28, 177, 15);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+       font-size: 1.5rem;
+}
