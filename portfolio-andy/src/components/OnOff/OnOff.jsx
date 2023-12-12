@@ -53,12 +53,7 @@ export default function OnOff() {
                     />
                 </div>
             </div> 
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
+            
         </div>
        
         <div className={style.contText}>
@@ -70,12 +65,7 @@ export default function OnOff() {
                     }
                 </div>
             </div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
-            <div className={style.division}></div>
+           
         </div>
         {/* {isPlaying ? 
             : 

@@ -16,8 +16,8 @@ export default function Nav() {
           setTimeout(() => {
             // Después de 5 segundos, vuelve al estado original y espera 30 segundos para el próximo cambio
             setParpadeo((prevParpadeo) => !prevParpadeo);
-          }, 7000);
-        }, 30000); // Cambiado a 30 segundos para que cambie por primera vez después de 30 segundos
+          }, 5000);
+        }, 15000); // Cambiado a 30 segundos para que cambie por primera vez después de 30 segundos
     
         // Limpieza del intervalo cuando el componente se desmonta
         return () => clearInterval(intervalId);

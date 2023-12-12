@@ -1,0 +1,126 @@
+
+.contAllSkills {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 3px solid rgba(255, 0, 0, 0.726); */
+}
+.container {
+    /* background-color: rgba(0, 128, 0, 0.815); */
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    margin-right: 0.5rem;
+}
+
+.contImage {
+    width: 30%;
+    /* background-color: blue;
+    border: 3px solid red; */
+}
+.contImage img {
+    width: 70%;
+}
+.contX {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -2rem;
+    /* background-color: yellow;     */
+}
+.contX img {
+    width: 3%;
+}
+
+.contDetails {
+    /* background-color: rgba(255, 0, 0, 0.747); */
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    row-gap: 2px;
+    column-gap: 2px;
+    height: 22rem; /* O la altura que desees */
+    overflow: auto; /* Esto hace que el contenido sea scrollable si es necesario */
+    border: 3px solid #0000008a; /* Añade un borde para mayor claridad */
+    border-radius: 7px;
+}
+
+.cuadro {
+    background-color: rgba(0, 0, 0, 0.521);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 3fx solid white; */
+    font-family: 'Press Start 2P', cursive;
+    color: #c6c6c6; 
+    font-size: 0.8rem;
+}
+.cuadro img {
+    width: 12%;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.685));
+}
+.cuadro label {
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.692); */
+   color: rgb(198, 10, 10);
+   font-size: 1rem;
+   
+    /* -webkit-text-stroke: 0.5px #c5bdbd; 
+    text-stroke: 0.5px #c5bdbd;  */
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+.contDetails::-webkit-scrollbar {
+    display: none;
+    
+  }
+.contFlechas {
+    /* border: 1px solid black; */
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    /* row-gap: 6rem; */
+}
+.contImgFlecha {
+    background-image: url('../../assets/botonFlecha.png');
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    background-repeat: no-repeat;
+    height: 26.5%;
+    cursor: pointer;
+   
+}  
+.contImgFlecha:hover {
+    /* transform: rotate(0deg); */
+    transform: translateY(-2px);
+}
+
+.contImgFlecha2 {
+    background-image: url('../../assets/botonFlecha2.png');
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+    background-repeat: no-repeat;
+    height: 26.5%;
+    cursor: pointer;
+    /* transform: rotate(180deg); */
+}  
+.contImgFlecha2:hover {
+    transform: translateY(-2px);
+}
+
+
+.contDetailsConnectify {
+    width: 88%;
+}
+.contDetailsConnectify p {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
